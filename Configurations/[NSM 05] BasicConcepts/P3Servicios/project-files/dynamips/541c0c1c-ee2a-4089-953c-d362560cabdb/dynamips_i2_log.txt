@@ -1,0 +1,54 @@
+Aug 30 14:25:47.527 HYPERVISOR: Release 0.2.20-amd64/Linux (tag 2019022012)
+Aug 30 14:25:47.527 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 52785.
+Aug 30 14:25:47.535 HYPERVISOR: exec_cmd: hypervisor version 
+Aug 30 14:25:47.537 HYPERVISOR: exec_cmd: hypervisor working_dir /home/mirai/GNS3/projects/P3Servicios/project-files/dynamips 
+Aug 30 14:25:47.537 GENERAL: working_dir=/home/mirai/GNS3/projects/P3Servicios/project-files/dynamips
+Aug 30 14:25:47.538 HYPERVISOR: exec_cmd: hypervisor working_dir /home/mirai/GNS3/projects/P3Servicios/project-files/dynamips/541c0c1c-ee2a-4089-953c-d362560cabdb 
+Aug 30 14:25:47.539 GENERAL: working_dir=/home/mirai/GNS3/projects/P3Servicios/project-files/dynamips/541c0c1c-ee2a-4089-953c-d362560cabdb
+Aug 30 14:25:47.539 HYPERVISOR: exec_cmd: vm create R2 2 c3745 
+Aug 30 14:25:47.540 VM: VM R2 created.
+Aug 30 14:25:47.542 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5001 
+Aug 30 14:25:47.544 HYPERVISOR: exec_cmd: c3745 get_mac_addr R2 
+Aug 30 14:25:47.545 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Aug 30 14:25:47.547 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 30 14:25:47.548 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x60aa1da0 
+Aug 30 14:25:47.552 HYPERVISOR: exec_cmd: vm set_ios R2 /home/mirai/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Aug 30 14:25:47.554 HYPERVISOR: exec_cmd: c3745 set_mac_addr R2 c402.42e1.0000 
+Aug 30 14:25:47.556 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+Aug 30 14:25:47.558 HYPERVISOR: exec_cmd: vm set_ram R2 256 
+Aug 30 14:25:47.559 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 30 14:25:47.561 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 NM-4T 
+Aug 30 14:25:50.330 HYPERVISOR: exec_cmd: nio create_udp udp-04771bfc-389a-46bd-946e-4532ab7e4723 10016 127.0.0.1 10017 
+Aug 30 14:25:50.585 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 1 0 udp-04771bfc-389a-46bd-946e-4532ab7e4723 
+Aug 30 14:25:50.586 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 30 14:25:52.402 HYPERVISOR: exec_cmd: nio create_udp udp-819a195a-c585-4d45-8cca-d6d3eb439590 10044 127.0.0.1 10045 
+Aug 30 14:25:52.406 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-819a195a-c585-4d45-8cca-d6d3eb439590 
+Aug 30 14:25:52.407 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 30 14:25:52.645 HYPERVISOR: exec_cmd: nio create_udp udp-853642c5-dec4-4f1d-b60b-901a9e905a92 10048 127.0.0.1 10049 
+Aug 30 14:25:52.651 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 1 udp-853642c5-dec4-4f1d-b60b-901a9e905a92 
+Aug 30 14:25:52.652 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 30 14:26:18.924 HYPERVISOR: exec_cmd: vm create Ghost 0 c3745 
+Aug 30 14:26:18.924 VM: VM Ghost created.
+Aug 30 14:26:18.929 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/mirai/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Aug 30 14:26:18.930 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Aug 30 14:26:18.934 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost /home/mirai/GNS3/projects/P3Servicios/project-files/dynamips/c3745-adventerprisek9-mz.124-25d.image-256.ghost 
+Aug 30 14:26:18.935 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Aug 30 14:26:18.936 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Aug 30 14:26:18.956 HYPERVISOR: exec_cmd: vm set_config Ghost configs/i0_startup-config.cfg 
+Aug 30 14:26:18.956 HYPERVISOR: exec_cmd: vm start Ghost 
+Aug 30 14:26:20.292 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Aug 30 14:26:20.295 HYPERVISOR: exec_cmd: vm stop Ghost 
+Aug 30 14:26:20.417 VM: VM Ghost shutdown.
+Aug 30 14:26:20.418 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Aug 30 14:26:20.421 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Aug 30 14:26:20.421 VM: VM Ghost destroyed.
+Aug 30 14:26:20.482 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Aug 30 14:26:20.485 HYPERVISOR: exec_cmd: vm set_ghost_file R2 /home/mirai/GNS3/projects/P3Servicios/project-files/dynamips/c3745-adventerprisek9-mz.124-25d.image-256.ghost 
+Aug 30 14:26:20.486 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 30 14:26:20.493 HYPERVISOR: exec_cmd: vm set_config R2 configs/i2_startup-config.cfg 
+Aug 30 14:26:20.501 HYPERVISOR: exec_cmd: vm start R2 
+Aug 30 14:51:23.131 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+Aug 30 14:51:23.151 HYPERVISOR: exec_cmd: vm set_ghost_file R2 /home/mirai/GNS3/projects/P3Servicios/project-files/dynamips/c3745-adventerprisek9-mz.124-25d.image-256.ghost 
+Aug 30 14:51:23.152 HYPERVISOR: exec_cmd: vm get_status R2 
+Aug 30 15:31:13.486 HYPERVISOR: exec_cmd: vm extract_config R2 
+Aug 30 15:31:13.533 HYPERVISOR: exec_cmd: vm extract_config R2 

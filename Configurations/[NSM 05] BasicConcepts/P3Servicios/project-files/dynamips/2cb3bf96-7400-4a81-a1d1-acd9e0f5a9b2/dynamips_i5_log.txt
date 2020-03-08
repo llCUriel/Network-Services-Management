@@ -1,0 +1,43 @@
+Aug 30 14:25:47.822 HYPERVISOR: Release 0.2.20-amd64/Linux (tag 2019022012)
+Aug 30 14:25:47.822 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 48305.
+Aug 30 14:25:47.832 HYPERVISOR: exec_cmd: hypervisor version 
+Aug 30 14:25:47.834 HYPERVISOR: exec_cmd: hypervisor working_dir /home/mirai/GNS3/projects/P3Servicios/project-files/dynamips 
+Aug 30 14:25:47.834 GENERAL: working_dir=/home/mirai/GNS3/projects/P3Servicios/project-files/dynamips
+Aug 30 14:25:47.836 HYPERVISOR: exec_cmd: hypervisor working_dir /home/mirai/GNS3/projects/P3Servicios/project-files/dynamips/2cb3bf96-7400-4a81-a1d1-acd9e0f5a9b2 
+Aug 30 14:25:47.836 GENERAL: working_dir=/home/mirai/GNS3/projects/P3Servicios/project-files/dynamips/2cb3bf96-7400-4a81-a1d1-acd9e0f5a9b2
+Aug 30 14:25:47.836 HYPERVISOR: exec_cmd: vm create R5 5 c3745 
+Aug 30 14:25:47.837 VM: VM R5 created.
+Aug 30 14:25:47.838 HYPERVISOR: exec_cmd: vm set_con_tcp_port R5 5004 
+Aug 30 14:25:47.840 HYPERVISOR: exec_cmd: c3745 get_mac_addr R5 
+Aug 30 14:25:47.841 HYPERVISOR: exec_cmd: vm set_disk0 R5 0 
+Aug 30 14:25:47.843 HYPERVISOR: exec_cmd: vm get_status R5 
+Aug 30 14:25:47.845 HYPERVISOR: exec_cmd: vm set_idle_pc R5 0x60aa1da0 
+Aug 30 14:25:47.847 HYPERVISOR: exec_cmd: vm set_ios R5 /home/mirai/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Aug 30 14:25:47.848 HYPERVISOR: exec_cmd: c3745 set_mac_addr R5 c405.4357.0000 
+Aug 30 14:25:47.849 HYPERVISOR: exec_cmd: vm set_nvram R5 256 
+Aug 30 14:25:47.850 HYPERVISOR: exec_cmd: vm set_ram R5 256 
+Aug 30 14:25:47.851 HYPERVISOR: exec_cmd: vm get_status R5 
+Aug 30 14:25:47.852 HYPERVISOR: exec_cmd: vm slot_add_binding R5 1 0 NM-4T 
+Aug 30 14:26:20.882 HYPERVISOR: exec_cmd: vm set_ghost_status R5 2 
+Aug 30 14:26:20.896 HYPERVISOR: exec_cmd: vm set_ghost_file R5 /home/mirai/GNS3/projects/P3Servicios/project-files/dynamips/c3745-adventerprisek9-mz.124-25d.image-256.ghost 
+Aug 30 14:26:20.909 HYPERVISOR: exec_cmd: vm get_status R5 
+Aug 30 14:26:20.926 HYPERVISOR: exec_cmd: vm set_config R5 configs/i5_startup-config.cfg 
+Aug 30 14:26:20.952 HYPERVISOR: exec_cmd: vm start R5 
+Aug 30 14:30:02.266 HYPERVISOR: exec_cmd: nio create_udp udp-fee2c85d-1120-4f28-bd00-3fc24f017fdc 10086 127.0.0.1 10087 
+Aug 30 14:30:02.556 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 1 0 udp-fee2c85d-1120-4f28-bd00-3fc24f017fdc 
+Aug 30 14:30:02.559 HYPERVISOR: exec_cmd: vm get_status R5 
+Aug 30 14:30:02.560 HYPERVISOR: exec_cmd: vm slot_enable_nio R5 1 0 
+Aug 30 14:43:19.311 HYPERVISOR: exec_cmd: vm set_ios R5 /home/mirai/GNS3/images/IOS/c3745-adventerprisek9-mz.124-25d.image 
+Aug 30 14:51:17.615 HYPERVISOR: exec_cmd: nio create_udp udp-18503422-844a-4e1b-b73b-939e61a681b6 10090 127.0.0.1 10091 
+Aug 30 14:51:17.622 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 0 0 udp-18503422-844a-4e1b-b73b-939e61a681b6 
+Aug 30 14:51:17.623 HYPERVISOR: exec_cmd: vm get_status R5 
+Aug 30 14:51:17.623 HYPERVISOR: exec_cmd: vm slot_enable_nio R5 0 0 
+Aug 30 14:51:23.198 HYPERVISOR: exec_cmd: vm set_ghost_status R5 2 
+Aug 30 14:51:23.204 HYPERVISOR: exec_cmd: vm set_ghost_file R5 /home/mirai/GNS3/projects/P3Servicios/project-files/dynamips/c3745-adventerprisek9-mz.124-25d.image-256.ghost 
+Aug 30 14:51:23.207 HYPERVISOR: exec_cmd: vm get_status R5 
+Aug 30 14:52:12.169 HYPERVISOR: exec_cmd: nio create_udp udp-fea61bc0-4d61-476e-8793-8df752a5b37a 10100 127.0.0.1 10101 
+Aug 30 14:52:12.176 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 0 1 udp-fea61bc0-4d61-476e-8793-8df752a5b37a 
+Aug 30 14:52:12.177 HYPERVISOR: exec_cmd: vm get_status R5 
+Aug 30 14:52:12.178 HYPERVISOR: exec_cmd: vm slot_enable_nio R5 0 1 
+Aug 30 15:32:44.101 HYPERVISOR: exec_cmd: vm extract_config R5 
+Aug 30 15:32:44.176 HYPERVISOR: exec_cmd: vm extract_config R5 
